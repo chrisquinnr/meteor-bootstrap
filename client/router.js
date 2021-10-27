@@ -1,6 +1,7 @@
 import { FlowRouter } from "meteor/ostrio:flow-router-extra";
 import { BlazeLayout } from "meteor/kadira:blaze-layout";
 import { AccountsTemplates } from "meteor/useraccounts:core";
+import { subs } from "./lib";
 
 AccountsTemplates.configure({
   defaultLayout: "myLayout",
@@ -28,6 +29,7 @@ private.route("/logout", {
   triggersEnter: [
     function (context, redirect) {
       Meteor.logout();
+      subs.clear();
       redirect("/");
     },
   ],

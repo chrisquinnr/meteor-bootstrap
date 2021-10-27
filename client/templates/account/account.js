@@ -3,7 +3,11 @@ import { Template } from "meteor/templating";
 import "./account.html";
 
 Template.account.onRendered(function () {
-  if (Meteor.user().profile.darkMode) {
+  if (
+    Meteor.user() &&
+    Meteor.user().profile &&
+    Meteor.user().profile.darkMode
+  ) {
     $("#darkMode").prop("checked", true);
   }
 });

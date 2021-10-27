@@ -11,15 +11,12 @@ Meteor.startup(() => {
       username: "admin@example.com",
       email: "admin@example.com",
       password: "password",
-      profile: {
-        //publicly visible fields like firstname goes heres
-      },
     });
   }
 });
 
 Accounts.onCreateUser(function (options, user) {
-  user.profiles = {
+  user.profile = {
     darkMode: 0,
   };
   return user;
