@@ -1,0 +1,79 @@
+<head>
+  <title>Meteor Application Bootstrap</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body></body>
+<template name="myLayout">
+  <main>
+    <div class="container">
+      {{#if currentUser}} {{> Template.dynamic template=main}} {{else}} {{>
+      login}} {{/if}}
+    </div>
+  </main>
+</template>
+
+<template name="home">
+  {{#unless ready}}
+  <div id="loadingBg" class="loadingBg fadeIn">
+    <div class="loadingContent">
+      <div class="tips">
+        <h3>{{getLoadingTip}}</h3>
+        <h4>Loading...</h4>
+      </div>
+
+      <div class="spinner-border" role="status">
+        <span class="sr-only">Loading...</span>
+      </div>
+    </div>
+  </div>
+  {{else}}
+  <nav>
+    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+      <button
+        class="nav-link active"
+        id="nav-home-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-home"
+        type="button"
+        role="tab"
+        aria-controls="nav-home"
+        aria-selected="false"
+      >
+        Home
+      </button>
+      <button
+        class="nav-link"
+        id="nav-account-tab"
+        data-bs-toggle="tab"
+        data-bs-target="#nav-account"
+        type="button"
+        role="tab"
+        aria-controls="nav-account"
+        aria-selected="false"
+      >
+        Account
+      </button>
+    </div>
+  </nav>
+  <div class="tab-content" id="nav-tabContent">
+    <div
+      class="tab-pane show active"
+      id="nav-home"
+      role="tabpanel"
+      aria-labelledby="nav-home-tab"
+    >
+      {{>initial}}
+    </div>
+    <div
+      class="tab-pane"
+      id="nav-account"
+      role="tabpanel"
+      aria-labelledby="nav-account-tab"
+    >
+      {{>account}}
+    </div>
+  </div>
+  {{/unless}}
+</template>
+
+<template name="smsLoggedIn"> <h1>SMS Logged in??!?! Nani?!?!?!</h1></template>

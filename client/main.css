@@ -1,0 +1,211 @@
+body {
+  padding: 10px;
+  font-family: sans-serif;
+}
+.tab-pane {
+  padding: 1rem;
+}
+.hidden {
+  display: none;
+}
+
+.dropzone {
+  border: 1px solid;
+  padding: 30px;
+}
+
+table {
+  margin-top: 2em;
+}
+
+tbody tr.altered {
+  background-color: rgb(173, 212, 224);
+}
+th {
+  padding: 5px;
+}
+tbody td {
+  padding: 5px;
+}
+fieldset {
+  border: 1px solid grey;
+  padding: 5px;
+}
+
+#map {
+  height: 300px;
+}
+
+#topright {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+}
+.searchFilter {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.toolkit {
+  display: flex;
+  justify-content: space-between;
+}
+
+#at-btn {
+  background: black;
+  color: white;
+  width: 100%;
+}
+
+.at-form {
+  max-width: 40%;
+}
+.quickActionsWrapper {
+  padding: 20px;
+  background: lightgrey;
+}
+.quickActions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media (max-width: 30em) {
+  .at-form {
+    max-width: 100%;
+  }
+}
+
+fieldset {
+  border: none;
+}
+
+.loadingBg {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.loadingContent {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  padding: 10px;
+}
+.fadeIn {
+  -webkit-animation: fade-in 1s ease;
+  -moz-animation: fade-in ease-in-out 1s both;
+  -ms-animation: fade-in ease-in-out 1s both;
+  -o-animation: fade-in ease-in-out 1s both;
+  animation: fade-in 1s ease;
+  visibility: visible;
+  -webkit-backface-visibility: hidden;
+}
+
+.locationAdd td {
+  padding: 5px;
+}
+
+@-webkit-keyframes fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-o-keyframes fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.fadeOut {
+  animation: fadeOut ease 1s;
+  -webkit-animation: fadeOut ease 1s;
+  -moz-animation: fadeOut ease 1s;
+  -o-animation: fadeOut ease 1s;
+  -ms-animation: fadeOut ease 1s;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-moz-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-o-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+@-ms-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+fieldset {
+  border: 1px solid grey;
+}
+
+legend {
+  width: inherit; /* Or auto */
+  padding: 0 10px; /* To give a bit of padding on the left and right */
+  border-bottom: none;
+}
