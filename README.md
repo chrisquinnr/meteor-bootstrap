@@ -1,16 +1,10 @@
-# Meteor 2.3.2 Bootstrap
+# Meteor 2.5 Bootstrap
 
 This is a quickstart app to get you up and running with a few Meteor basics, including accounts, routing, collections and adding a library like Bootstrap. We're using good old Blaze in this example but a shiny new Svelte version will be coming soon.
 
-## Meteor 2.5
-
-Hot off the press, 2.5 is now out:
-[https://blog.meteor.com/announcing-meteor-2-5-with-cordova-10-accounts-passwordless-and-much-more-1848fa61e313](https://blog.meteor.com/announcing-meteor-2-5-with-cordova-10-accounts-passwordless-and-much-more-1848fa61e313)
-
-I have not had a chance to test this project with 2.5 yet, so YMMV.
-
 ### Quickstart
 
+- Get Meteor installed: https://www.meteor.com/developers/install
 - Clone this repo
 - `meteor npm install`
 - `meteor`
@@ -24,6 +18,17 @@ Meteor is full stack JS framework ideally suited to realtime applications. Its e
 Like any framework, Meteor's benefits come at a price, in that you need to buy in to Meteor's highly opinionated structure and concepts. Fortunately these aren't too crazy and most of the rules can be broken if you want, but there are plenty of gotchas that will trip first time users up.
 
 Hopefully that's where this bootstrap project can help, getting you from zero to... something a little faster. I'm not suggesting this is a gold standard, and I'd recommend the resources below for the authoratative take on things like application structure and best practice.
+
+## Resources
+
+In suggested order of reading for anyone new to the framework.
+
+- [Meteor Guide](https://guide.meteor.com/) - Read this first!
+- [Official Tutorials](https://www.meteor.com/developers/tutorials)
+- [Meteor API](https://docs.meteor.com/#/full/)
+- [Forums] (https://forums.meteor.com/)
+- [Meteor Devtools](https://chrome.google.com/webstore/detail/meteor-devtools-evolved/ibniinmoafhgbifjojidlagmggecmpgf?hl=en)
+- [2021 Meteor Impact conference](https://impact.meteor.com/), with some great talks from the community and previews of upcoming features
 
 ## Notes on this demo
 
