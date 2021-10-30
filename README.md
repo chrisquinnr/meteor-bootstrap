@@ -13,7 +13,7 @@ This is a quickstart app to get you up and running with a few Meteor basics, inc
 
 Meteor has been making an awesome comeback over the past 18 months after the original development team moved on to new GraphQL-flavoured pastures. After being bought out by a VC firm, the project has picked up pace and as seen a renewed focus on addressing some of Meteor's roadmap.
 
-Meteor is full stack JS framework ideally suited to realtime applications. Its early advantages were zero-config websockets and ES6 that #justWored, but now I find that it's a great tool for prototyping and building MVPs, since we not only get to leverage the wonders of NPM but also the framework lets you bring your own frontend. Blaze, React, Angular and now Svelte are all options.
+Meteor is full stack JS framework ideally suited to realtime applications. Its early advantages were zero-config websockets and ES6 that #justWorked, but now I find that it's a great tool for prototyping and building MVPs, since we not only get to leverage the wonders of NPM but also the framework lets you bring your own frontend. Blaze, React, Angular and now Svelte are all options.
 
 Like any framework, Meteor's benefits come at a price, in that you need to buy in to Meteor's highly opinionated structure and concepts. Fortunately these aren't too crazy and most of the rules can be broken if you want, but there are plenty of gotchas that will trip first time users up.
 
