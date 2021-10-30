@@ -29,47 +29,50 @@ In suggested order of reading for anyone new to the framework.
 
 Once you're up and running, why not check out the following?
 
-- [Forums] (https://forums.meteor.com/)
+- [Forums](https://forums.meteor.com/)
 - [Meteor Devtools](https://chrome.google.com/webstore/detail/meteor-devtools-evolved/ibniinmoafhgbifjojidlagmggecmpgf?hl=en)
 - [2021 Meteor Impact conference](https://impact.meteor.com/), with some great talks from the community and previews of upcoming features
 
 And if you're hungry for more packages, examples and great community content, check these out:
 
-- Awesome Meteor(https://github.com/urigo/awesome-meteor)
-- Awesome Blaze(https://github.com/arggh/awesome-blaze)
+- [Awesome Meteor](https://github.com/urigo/awesome-meteor)
+- [Awesome Blaze](https://github.com/arggh/awesome-blaze)
 
-## Notes on this demo
-
-### Packages
+## Packages
 
 Over and above anything I've written below, you should check out the [Meteor Community Packages repo](https://github.com/Meteor-Community-Packages). This is a welcome new endeavour to bring awesome community-created modules under one roof.
 
-#### Styling
+### Styling
 
 Ironically the first batch of packages this project depends on aren't Meteor specific, so won't be found in `.meteor/packages`. We use `meteor npm install` to add [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) and associated dependencies.
 
-#### Utility, Subscriptions
+### Utility, Subscriptions
 
-- _underscore_: currently only used for a simple randomise function, but I use it in most projects. Of course, you can replace this with [lodash] or any number of other helper libraries. Consider only importing the functions you use to avoid loading in the whole library (see [tree-shaking](https://javascript.info/import-export)).
+#### _underscore_
 
-- _meteorhacks:subs-manager_: A very useful package for controlling how your application behaves based on when subscriptions are ready. I've used this package on several enterprise projects and it's well worth it.
+Currently only used for a simple randomise function, but I use it in most projects. Of course, you can replace this with [lodash] or any number of other helper libraries. Consider only importing the functions you use to avoid loading in the whole library (see [tree-shaking](https://javascript.info/import-export)).
 
-- _simple:reactive-method_: Meteor helpers are powerful, they allow you to reactively update your UI based on data mutations over the wire. Sometimes though, you need to listen for the result of a server-side operation. Meteor.call is not inherently reactive, meaning you'd need to continously poll the server for the result you want. Enter Reactive Methods, a neat solution to this issue. A reactive method can call any Meteor.method you've defined on the server and, if used in a Template helper, will update reactively.
+#### _meteorhacks:subs-manager_
 
-#### Routing & Templates
+A very useful package for controlling how your application behaves based on when subscriptions are ready. I've used this package on several enterprise projects and it's well worth it.
 
-- _ostrio:flow-router-extra_
-- _mealsunite:flow-routing-extra_
+#### _simple:reactive-method_
+
+Meteor helpers are powerful, they allow you to reactively update your UI based on data mutations over the wire. Sometimes though, you need to listen for the result of a server-side operation. Meteor.call is not inherently reactive, meaning you'd need to continously poll the server for the result you want. Enter Reactive Methods, a neat solution to this issue. A reactive method can call any Meteor.method you've defined on the server and, if used in a Template helper, will update reactively.
+
+### Routing & Templates
+
+#### _ostrio:flow-router-extra_ && _mealsunite:flow-routing-extra_
 
 You'd be forgiven for being a little confused about the state of routing in Meteor. I know I was. The catch-all community-created solution for many years was Flow Router, which was thankfully picked up by Veliov Group (https://github.com/veliovgroup). It remains my choice too, but needs a little help from sibling packages to play nice with blaze layout below.
 
-- _kadira:blaze-layout_: A neat way to declare and control layouts in conjunction with your routing solution, obviously for Blaze.
+#### _kadira:blaze-layout_
 
-#### Accounts
+A neat way to declare and control layouts in conjunction with your routing solution, obviously for Blaze.
 
-- _useraccounts:core_
-- _accounts-password@2.2.0_
-- _useraccounts:bootstrap_
+### Accounts
+
+#### _useraccounts:core_ / _accounts-password@2.2.0_ / _useraccounts:bootstrap_
 
 The combination of these packages gives us user accounts, authentication and more straight out of the box! Awesome right! It's even extensible with other packages to add oAuth login providers.
 
